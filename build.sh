@@ -11,5 +11,5 @@ yum makecache
 
 for r in $(cat requirements/rpms.txt);
 do
-  yum reinstall $r --downloadonly --downloaddir=/tmp
+  yum install  --downloadonly --downloaddir=/tmp $r
 done
